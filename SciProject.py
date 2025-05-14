@@ -33,7 +33,13 @@ organ = organ.loc[mask, :]
 #print(organ.info())
 organ.sort_values("contributors")
 organ = organ.loc[:, ["projectID", "country", "role", "activityType", "city"]]
-
+# Ensure proper formatting of 'city' column
+organ['city'] = organ['city'].str.title()
+organ['city'] = organ['city'].replace({
+    'Paris 15': 'Paris',
+    'Thermi Thessaloniki': 'Thessaloniki',
+    'Athina': 'Athens'
+})
 #print(organ.head)
 
 
