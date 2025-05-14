@@ -5,7 +5,7 @@ import plotly.io as pio
 from htmltools import HTML
 
 # Load dataset
-df = pd.read_csv("C:/Users/sarah/OneDrive - KU Leuven/Desktop/Modern Data Analytics/MDA/oscar_SciProject.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/Arthur-Vansimpsen/MDA/refs/heads/main/oscar_SciProject.csv")
 
 # List of countries to choose from
 country_list = ["ES", "FR", "EL", "IT", "DE", "BE", "NL", "SE", "UK"]
