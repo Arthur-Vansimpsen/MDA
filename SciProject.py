@@ -22,7 +22,7 @@ print(Project.info())
 
 organ = pd.read_csv("organization.csv", sep=";")
 
-organ = organ.loc[:, ["projectID", "country", "role"]]
+organ = organ.loc[:, ["projectID", "country", "role", "activityType", "city"]]
 
 organ.loc[:, "contributors"] = organ.groupby(["projectID"])["projectID"].transform("count")
 
@@ -32,7 +32,7 @@ organ = organ.loc[mask, :]
 
 #print(organ.info())
 organ.sort_values("contributors")
-organ = organ.loc[:, ["projectID", "country", "contributors"]]
+organ = organ.loc[:, ["projectID", "country", "role", "activityType", "city"]]
 
 #print(organ.head)
 
