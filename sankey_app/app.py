@@ -8,7 +8,7 @@ from htmltools import HTML
 df = pd.read_csv("https://raw.githubusercontent.com/Yokie0105/MDA-data/refs/heads/main/oscar_SciProject.csv")
 
 # List of countries to choose from
-country_list = ["ES", "FR", "EL", "IT", "DE", "BE", "NL", "SE", "UK"]
+country_list = ["ES", "FR", "EL", "IT", "DE", "BE", "NL", "SE", "UK", "NO", "AT", "FI"]
 
 # UI
 app_ui = ui.page_fluid(
